@@ -1,7 +1,8 @@
 .NavBar {
     background-color: #ffffff;
-    border-bottom: 2px solid #98663d;
-    /* box-shadow: 0 2px 4px 0 rgba(0,0,0,.5); */
+    /* border-bottom: 1.5px solid #98663d; */
+    border-bottom: 2px solid rgb(103, 103, 193);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
 }
 
 .NavLink {
