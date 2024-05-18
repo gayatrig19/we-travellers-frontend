@@ -49,7 +49,7 @@ const SignUpForm = () => {
               <Form.Control
                 className={styles.Input}
                 type="text"
-                placeholder="username"
+                placeholder="Enter username"
                 name="username"
                 value={username}
                 onChange={handleChange}
@@ -120,7 +120,7 @@ const SignUpForm = () => {
       >
         <Image
           className={`${appStyles.FillerImage}`}
-          src={"https://codeinstitute.s3.amazonaws.com/AdvancedReact/hero2.jpg"}
+          src={"https://res.cloudinary.com/dpzitpjjc/image/upload/v1716061050/signup_cover_image_lajebr.webp"}
         />
       </Col>
     </Row>
