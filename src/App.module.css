@@ -1,7 +1,8 @@
 .App {
     font-family: "DM Sans", sans-serif;
-    background-color: #f8f8f8;
+    /* background-color: #f8f8f8; */
     /* background-color: #06a1c2; */
+    background-color: #e2d8d8;
     min-height: 100vh;
 }
 
