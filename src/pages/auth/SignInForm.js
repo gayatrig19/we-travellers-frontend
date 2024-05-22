@@ -1,6 +1,7 @@
+// React imports
 import React, { useState } from "react";
-import axios from "axios";
-
+import { Link, useHistory } from "react-router-dom";
+// Bootstrap imports
 import Form from "react-bootstrap/Form";
 import Alert from "react-bootstrap/Alert";
 import Button from "react-bootstrap/Button";
@@ -8,12 +9,13 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";
-
-import { Link, useHistory } from "react-router-dom";
-
+// CSS imports
+import appStyles from "../../App.module.css";
 import styles from "../../styles/SignInUpForm.module.css";
 import btnStyles from "../../styles/Button.module.css";
-import appStyles from "../../App.module.css";
+//axios imports
+import axios from "axios";
+// component imports
 import { useSetCurrentUser } from "../../contexts/CurrentUserContext";
 import { useRedirect } from "../../hooks/useRedirect";
 
@@ -108,14 +110,13 @@ function SignInForm() {
           </Link>
         </Container>
       </Col>
-      <Col
-        md={6}
+      <Col md={6}
         className={`my-auto d-none d-md-block p-2 ${styles.SignInCol}`}
       >
         <Image
           className={`${appStyles.FillerImage}`}
           src={
-            "https://res.cloudinary.com/dpzitpjjc/image/upload/v1716061050/signup_cover_image_lajebr.webp"
+            "https://res.cloudinary.com/dpzitpjjc/image/upload/v1716416342/signin_cover_image_iedraw.webp"
           }
         />
       </Col>
