@@ -143,13 +143,13 @@ const Post = (props) => {
         {content && <Card.Text className="text-center">{content}</Card.Text>}
         {place && (
           <Card.Text className="text-center">
-            <i class="fa-solid fa-location-dot"></i>
+            <i className="fa-solid fa-location-dot" />
             {place}
           </Card.Text>
         )}
         {region && (
           <Card.Text className="text-center">
-            <i class="fa-solid fa-globe"></i>
+            <i className="fa-solid fa-globe" />
             {region}
           </Card.Text>
         )}
