@@ -56,11 +56,11 @@ const NavBar = () => {
         activeClassName={styles.Active}
         to="/bookmarked"
       >
-        <i class="fa-solid fa-book-bookmark"></i>Bookmarks
+        <i className="fa-solid fa-book-bookmark"></i>Bookmarks
       </NavLink>
 
       <NavLink className={styles.NavLink} to="/" onClick={handleSignOut}>
-        <i class="fas fa-sign-out-alt"></i>Sign out
+        <i className="fas fa-sign-out-alt"></i>Sign out
       </NavLink>
 
       <NavLink
