@@ -1,20 +1,18 @@
 .App {
     font-family: "DM Sans", sans-serif;
-    /* background-color: #f8f8f8; */
-    /* background-color: #06a1c2; */
     background-color: #e2d8d8;
     min-height: 100vh;
 }
 
 .Main {
-    padding-top: 110px;
+    padding-top: 115px;
 }
 
 .Content {
     background-color: #ffffff;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #dadadf;
+    border: 1px solid #b95b24;
     box-shadow: 0 2px 4px 0 rgba(16, 15, 5, 0.5);
 } 
 

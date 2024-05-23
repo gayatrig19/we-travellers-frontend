@@ -1,16 +1,19 @@
+// React imports
 import React from 'react';
-import styles from '../../styles/Post.module.css';
-import { useCurrentUser } from "../../contexts/CurrentUserContext";
-
+import { Link, useHistory } from "react-router-dom";
+// Bootstrap imports
 import Card from 'react-bootstrap/Card';
 import Media from 'react-bootstrap/Media';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
-
-import { Link, useHistory } from "react-router-dom";
+// CSS imports
+import styles from '../../styles/Post.module.css';
+// Component imports
 import Avatar from "../../components/Avatar";
-import { axiosRes } from "../../api/axiosDefaults";
 import { EditDeleteDropdown } from '../../components/EditDeleteDropdown';
+import { useCurrentUser } from "../../contexts/CurrentUserContext";
+// axios imports
+import { axiosRes } from "../../api/axiosDefaults";
 
 const Post = (props) => {
   const {
@@ -50,7 +53,6 @@ const Post = (props) => {
       console.log(err);
     }
   };
-
 
   const handleLike = async () => {
     try {
