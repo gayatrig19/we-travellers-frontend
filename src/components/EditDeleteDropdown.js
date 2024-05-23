@@ -1,9 +1,13 @@
+// React imports
 import React from "react";
+import { useHistory } from "react-router";
+// Bootstrap imports
 import Dropdown from "react-bootstrap/Dropdown";
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
+// CSS imports
 import styles from '../styles/EditDeleteDropdown.module.css';
-import { useHistory } from "react-router";
+
 
 // The forwardRef is important!!
 // Dropdown needs access to the DOM node in order to position the Menu
@@ -18,6 +22,7 @@ const ThreeDots = React.forwardRef(({ onClick }, ref) => (
   />
 ));
 
+// Dropdown menu for posts and comments
 export const EditDeleteDropdown = ({ handleEdit, handleDelete }) => {
   return (
     <Dropdown className="ml-auto" drop="left">
@@ -51,6 +56,7 @@ export const EditDeleteDropdown = ({ handleEdit, handleDelete }) => {
   );
 };
 
+// Dropdown menu to edit profiles
 export function ProfileEditDropdown({ id }) {
   const history = useHistory();
   return (
@@ -61,21 +67,21 @@ export function ProfileEditDropdown({ id }) {
           onClick={() => history.push(`/profiles/${id}/edit`)}
           aria-label="edit-profile"
         >
-          <i className="fas fa-edit" /> edit profile
+          <i className="fas fa-edit" /> Edit profile
         </Dropdown.Item>
         <Dropdown.Item
           onClick={() => history.push(`/profiles/${id}/edit/username`)}
           aria-label="edit-username"
         >
           <i className="far fa-id-card" />
-          change username
+          Change username
         </Dropdown.Item>
         <Dropdown.Item
           onClick={() => history.push(`/profiles/${id}/edit/password`)}
           aria-label="edit-password"
         >
           <i className="fas fa-key" />
-          change password
+          Change password
         </Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>

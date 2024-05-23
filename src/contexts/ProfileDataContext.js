@@ -3,7 +3,6 @@ import { axiosReq, axiosRes } from "../api/axiosDefaults";
 import { useCurrentUser } from "./CurrentUserContext";
 import { followHelper, unfollowHelper } from "../utils/utils";
 
-
 export const ProfileDataContext = createContext();
 export const SetProfileDataContext = createContext();
 
@@ -66,7 +65,7 @@ export const ProfileDataProvider = ({ children }) => {
     }
   };
 
-             
+  
   useEffect(() => {
     const handleMount = async () => {
       try {

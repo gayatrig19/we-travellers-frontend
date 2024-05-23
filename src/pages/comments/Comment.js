@@ -1,17 +1,19 @@
+// React imports
 import React, { useState } from 'react';
-import { Media } from "react-bootstrap";
+import { Link } from "react-router-dom";
+// Bootstrap imports
+import Media from "react-bootstrap/Media";
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
-import { Link } from "react-router-dom";
-
+// CSS imports
+import styles from '../../styles/Comment.module.css';
+// Component imports
 import Avatar from "../../components/Avatar";
 import { EditDeleteDropdown } from '../../components/EditDeleteDropdown';
 import CommentEditForm from "./CommentEditForm";
-
-import styles from '../../styles/Comment.module.css';
 import { useCurrentUser } from '../../contexts/CurrentUserContext';
+// axios import
 import { axiosRes } from "../../api/axiosDefaults";
-
 
 const Comment = (props) => {
   const {
@@ -100,22 +102,22 @@ const Comment = (props) => {
               placement="top"
               overlay={<Tooltip>You can't like your own comment!</Tooltip>}
             >
-              <i className={`${styles.LikeUnlike} far fa-heart`} />
+              <i className={`${styles.LikeIcon} far fa-heart`} />
             </OverlayTrigger>
           ) : commentlike_id ? (
             <span onClick={handleCommentUnlike}>
-              <i className={`${styles.LikeUnlike} fas fa-heart`} />
+              <i className={`${styles.Like} fas fa-heart`} />
             </span>
           ) : currentUser ? (
             <span onClick={handleCommentLike}>
-              <i className={`${styles.LikeUnlike} far fa-heart`} />
+              <i className={`${styles.LikeOutline} far fa-heart`} />
             </span>
           ) : (
             <OverlayTrigger
               placement="top"
               overlay={<Tooltip>Log in to like comments!</Tooltip>}
             >
-              <i className={`${styles.LikeUnlike} far fa-heart`} />
+              <i className={`${styles.LikeIcon} far fa-heart`} />
             </OverlayTrigger>
           )}
           {commentlikes_count}

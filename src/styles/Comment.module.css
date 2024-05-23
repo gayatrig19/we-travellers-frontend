@@ -1,11 +1,30 @@
 .Owner {
     font-weight: bold;
-    /* color: #06a1c2; */
     color: #00277d;
     margin-right: 8px;
 }
 
 .Date {
-    /* font-weight: lighter; */
-    color: #c1c1c5;
+    color: #74747b;
+}
+
+.LikeIcon {
+    font-size: 20px;
+}
+
+.Like {
+    font-size: 20px;
+    color: red;
+}
+
+.Like:hover {
+    color: #00277d;
+}
+
+.LikeOutline {
+    font-size: 20px;
+}
+
+.LikeOutline:hover {
+    color: red;
 }

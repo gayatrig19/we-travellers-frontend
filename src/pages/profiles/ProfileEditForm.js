@@ -1,6 +1,7 @@
+// React imports
 import React, { useState, useEffect, useRef } from "react";
 import { useHistory, useParams } from "react-router-dom";
-
+// Bootstrap imports
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
@@ -8,15 +9,16 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Alert from "react-bootstrap/Alert";
-
+// CSS imports
+import btnStyles from "../../styles/Button.module.css";
+import appStyles from "../../App.module.css";
+// axios imports
 import { axiosReq } from "../../api/axiosDefaults";
+// Component imports
 import {
   useCurrentUser,
   useSetCurrentUser,
 } from "../../contexts/CurrentUserContext";
-
-import btnStyles from "../../styles/Button.module.css";
-import appStyles from "../../App.module.css";
 
 const ProfileEditForm = () => {
   const currentUser = useCurrentUser();
@@ -30,6 +32,7 @@ const ProfileEditForm = () => {
     bio: "",
     image: "",
   });
+  
   const { name, bio, image } = profileData;
 
   const [errors, setErrors] = useState({});
