@@ -97,6 +97,7 @@ function PostCreateForm() {
           as="textarea"
           rows={6}
           name="content"
+          placeholder="Tell us a bit more about your travel experience..."
           value={content}
           onChange={handleChange}
         />
@@ -112,6 +113,7 @@ function PostCreateForm() {
         <Form.Control
           type="text"
           name="place"
+          placeholder="e.g., Eiffel Tower, Central Park, Paris"
           value={place}
           onChange={handleChange}
         />
