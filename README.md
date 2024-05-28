@@ -48,7 +48,7 @@ We Travellers website is developed as a Portfolio Project#5 (Advanced Front End 
         - [Links and Buttons](#links-and-buttons)
         - [Negative Testing](#negative-testing)
     - [Automated Testing](#automated-testing)
-      - [Unit Testing](#unit-testing)
+      - [Unit Testing](#unit-tests)
     - [Bugs](#bugs)
       - [console errors](#console-errors)
     - [Deployment](#deployment)
@@ -182,10 +182,122 @@ Each Milestone covers the user stories for small features allowing me to priorit
   - As a logged-in user, I can unlike a post so that I can remove a like if I don't feel to like the post anymore.
   - As a logged-in User, I can bookmark the posts so that I can save posts and revisit them later.
   - As a logged-in User, I can remove bookmark tags (labels) from the posts so that they are no longer displayed on the bookmarks page.
-  
+
 - Milestone 7- Documentation and Deployment
   - As a developer, I need to make sure the project is deployed to heroku so that everything works and looks as expected.
   - As a developer, I need to create readme.md file so that the project is documented in detail.
+
+
+## The Structure Plane
+
+### Features
+
+### Reusable Components
+
+### Features Left to Implement
+
+
+
+## The Skeleton Plane
+
+### Wireframes
+
+### Database Design
+
+
+
+## The Surface Plane
+
+### Design/ Colour-Scheme/ Typography/ Images
+
+
+
+## Technologies
+
+### Tools and Technologies
+
+- Node - package manager used to install dependencies
+- React - framework used for UI
+- Bootstrap React - CSS framework used for responsive design
+- Gitpod - used to develop the website
+- [GitHub](https://github.com/) to host the source code. 
+- Git to provide the version control to commit and push code to the repository.
+- HTML - used to create main static content of the website
+- CSS- used for website styling
+- JavaScript- used to create dynamic content and make page interactive
+- Heroku - to deploy the app
+- [Google Fonts](https://fonts.google.com/) for typography.
+- [FontAwesome](https://fontawesome.com/v5/search) v5.15.4 for website icons.
+- [Favicon.io](https://favicon.io/) to create the website favicon.
+- [Canva](https://www.canva.com/) user to create the website logo.
+- [Cloudconvert](https://cloudconvert.com/jpg-to-webp) to convert .jpg images into .webp to reduce the storage and enhance the website performance.    
+- [TinyJPG](https://tinyjpg.com/) to optimise images for website.
+- Balsamiq to design the wireframes for the website.
+- Google Chrome's Lighthouse to test accessibility for desktop and mobile devices.
+- [W3C HTML Markup Validator](https://validator.w3.org/) to validate the HTML Code.
+- [W3C Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/) to validate the CSS Code.
+- ESLINT - pre-installed tool in CI gitpod template used to check java script code meets standards 
+   and has no errors.
+- [SmartDraw](https://www.smartdraw.com/) used to generate the ER Diagram
+- [Am I Responsive](http://amiresponsive.blogspot.com/) to create the Mockup image in this README.
+- Code Institute's Gitpod Template to generate the workspace for the project.
+
+### Imports
+
+#### Installed Packages
+
+
+
+## Testing
+
+### Responsiveness
+
+### Accessibility
+
+### Lighthouse
+
+### Validator Testing
+
+#### HTML Validation
+
+#### CSS Validation
+
+#### JavaScript Validation
+
+
+### Manual Testing
+
+#### Functional Testing
+
+##### Links and Buttons
+
+##### Negative Testing
+
+### Automated Testing
+
+#### Unit Testing
+
+## Bugs
+
+### Console errors
+
+## Deployment
+
+### Version Control
+
+### Deploying in Heroku
+
+### Cloning the Repository
+
+### Forking
+
+## Credits
+
+## Acknowledgements
+
+
+
+
 
 
 
