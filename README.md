@@ -319,6 +319,14 @@ All the features are implemented with user stories in mind.
 
 ![home_page_view_small_screens](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716928539/post_list_view_small_screens_lm3bxi.png)
 
+Each of the Home page features is described as follow:
+
+#### Search Posts
+
+`As a User, I can search / filter for posts with keywords so that I can find the posts and user profiles I am curious about and learn more about them.`
+
+
+
 
 
 
@@ -397,7 +405,63 @@ All the features are implemented with user stories in mind.
 
 ### Responsiveness
 
+- The site is designed to be flexible, fluid and responsive on all screen sizes. Website has been 
+  checked for responsiveness through Chrome Development tools. In order to do this, the following steps have been taken:
+  1. Open the browser.
+  2. Navigate to the We Travellers website <https://we-travellers-3efa8cc2d788.herokuapp.com/>
+  3. Right click anywhere on the page and got to "Inspect" to open Development Tools.
+  4. Click on drop down menu: "Dimensions: Responsive" and choose "Responsive".
+  5. Drag the side of the screen and change screen size, making sure the website looks good from 320px and up. Here, ensure there is consistency in design of the website on every screen size from small(mobile devices) to larger(desktop devices) and no scorll bar is showing for layout of site.
+
+- Expected Result: Each page is responsive and user friendly when viewing the website on small and 
+  large screens. The pages have no design or accessibility issue in any of the screen sizes from 320px and up.
+- Actual Result: Website is responsive with no scroll bar showing, the content is accessible to  
+  user to read and the images are not appearing stretched. Website is user friendly on small to large screen sizes.
+
+- The following devices are used to check responsiveness:
+     - Iphone 12 Pro
+     - Samsung Galaxy S20 Ultra
+     - iPad Mini
+     - Surface Pro 7
+- The website was also tested further by sharing the live link with friends and family. The site  
+  was tested on following devices:
+     - Samsung S20 FE 5G
+     - Iphone 12 
+     - iPad Air
+     - Samsung S24 Ultra
+     - Microsoft Surface
+     - Asus X5 50
+     - Lenovo Pad Pro 12.7
+
+- The following browsers have been used to check responsiveness. Testing for different browsers was 
+  carried on manually.
+     - Chrome
+     - Safari
+     - Microsoft Edge
+     - Firefox
+     - Internet Explorer
+
+I was not able to use the app on Iphone and Safari. It registers the new user account however it won't allow to sign in, I have found that everyone submitting the project has the same issue and this can not be fixed. [Sean explains it here](https://code-institute-room.slack.com/archives/C02MTH5MBDG/p1659719243446449?thread_ts=1659705919.570999&cid=C02MTH5MBDG)
+
+
 ### Accessibility
+
+- Each page is checked with the help of WAVE Accessibility tool (<https://wave.webaim.org/>)
+- Each page passes accessibility test with no error for:
+  - contrast
+  - aria- labels for users who use screen-readers.
+  - alternative text as a function for screen readers or in events if the images don't load.
+  - structural elements: for users of assistive technology as well as visual and semantic meaning.
+  - language of the document for screen readers.
+  - alerts coming up 'Reduntant link-Adjacent links go to the same URL', however as it doesn't come 
+    up as an error, I have left it in. The warnings are mainly for signup, signin. Also for the comments link on post list view which takes user to comments section in post detail view and two links to home page from 'home' link and logo.
+  - The errors for form labels are not resolved and left for later due to time constraint.
+
+- Accessibility test result for [website](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716938607/wave_accessibility_testing_vo9lfh.png)
+
+
+  
+
 
 ### Lighthouse
 
