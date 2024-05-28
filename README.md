@@ -192,7 +192,7 @@ Each Milestone covers the user stories for small features allowing me to priorit
 
 All the features are implemented with user stories in mind.
 
-### Favicon
+#### Favicon
 
 `As a developer, I need to add favicon to the website so that users can locate pages easily when they have multiple tabs open.`
 
@@ -200,7 +200,7 @@ All the features are implemented with user stories in mind.
 
 - Favicon icon for the website is displayed within the tab so that the user is able to easily find the tab and navigate to the website if a number of sites are opened at the same time.
 
-### Navigation Menu
+#### Navigation Menu
 
 `As a User, I can see my logged in status, so that I know I need to log in or log out as needed.`
 
@@ -227,6 +227,7 @@ All the features are implemented with user stories in mind.
 
 - Navigation bar is shown the same on all pages for consistent design and good UX. Responsive design allows for hamburger bar on smaller screens. When user is logged in - a user profile avatar and username is displayed. The displayed name and avatar for navbar is implemented to give a more personalized touch every time user visits the website.
 - The aim of the feature is so that the user can easily navigate around the website pages. Username and the profile avatar shown is there for confirmation of logged in state for user on each page. Options the user can select differ based on whether the user is logged in or not. This is so that the nav bar isn't overcrowded and is simple and intuitive to use.
+- The active link is marked for ease of accessibility so that the user knows the current page been visited.
 - Following options are displayed to the users based on their logged-in status:
   - Home - for all users
   - Sign Up - for unauthorised users
@@ -238,18 +239,49 @@ All the features are implemented with user stories in mind.
   - Profile Avatar and Username - for authorised users
   - Add Post - for authorised users
 
-### Sign in / Sign up / Log out
+#### Sign in / Sign up / Sign out
+
+- Each of the following pages are accessible through navigation menu for large and small screen 
+  sizes.
+
 
 `As a user, I can create a new account so that I can access all the features for signed up users.`
 
+- Implementation of the sign up feature allows users to register to the application to explore the 
+  complete functionality of the website.
+- If user is already registered, a link to sign in is also provided in the form for better user 
+  experience.
 
+- Sign up feature design for large and small screens:
+
+![sign_up_large_screen](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716914867/sign_up_large_screens_qqawi9.png)
+
+![sign_up_small_screen](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716914866/sign_up_small_screens_by2sij.png)
 
 
 `As a user, I can sign in to the app so that I can access functionality for logged in users.`
 
+- Implementation of this feature allows user to sign in to explore complete website features for 
+  authorised users
+- If user is not registered or if enters incorrect page, link for sign up is provided in the form 
+  for better UX.
+
+- Sign in feature design for large and small screens:
+
+![sign_in_large_screen](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716914866/sign_in_large_screens_kzja6a.png)
+
+![sign_in_small_screen](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716914865/sign_in_small_screens_czs20g.png)
 
 
 `As a logged in user, I can stay logged in so that I can keep using the features until I log out myself.`
+
+![sign_out_feature_image](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716921852/sign_out_image_h1mpfs.png)
+
+- These features allows user to register to explore the complete website and interact with users, posts, and the pages content
+- The aim of this feature implementation is a user is able to perform CRUD functionality on their content and can access other features of the website as long as they decide to sign out. This provides a complete user control so that they can easily navigate through pages and have access to all without getting sign out automatically.
+
+
+
 
 
 
