@@ -279,6 +279,51 @@ All the features are implemented with user stories in mind.
 
 - These features allows user to register to explore the complete website and interact with users, posts, and the pages content
 - The aim of this feature implementation is a user is able to perform CRUD functionality on their content and can access other features of the website as long as they decide to sign out. This provides a complete user control so that they can easily navigate through pages and have access to all without getting sign out automatically.
+- On registration / sign in, user can create travel posts(with CRUD functionality), add comments to posts(with CRUD functionality), like / unlike the comments and posts made by other users, bookmark the user posts, follow and unfollow the user profiles, access their own content and profile(can perform CRUD functionality), thus exploring the complete website features tailored for them.
+
+
+#### Home Page(Posts Page)
+
+`As a user, I can view the list of all the most recent posts so that I can browse through them and keep up to date with the newest content.`
+
+- The home page view is available to all the users regardless of their logged-in status on entering the website. They can view list of all travel posts with the most recent ones appearing at the top. The listing of the posts is in descending order based on the recent created date so that the newest content is available for users to keep them updated for the same.
+- The home page view consists of the Post lists, a search bar and the popular profiles to follow as a side bar.
+- Each post contains details for: image, title, content, place, region, created / updated date, the post owner name and avatar.
+- The above details are followed by the like, comments and bookmark icons. 
+
+`As a user, I can view all the posts by a specific user so that I can catch up on their latest posts, or decide I want to follow them.`
+
+- User can view all the posts by a specific user irrespective of their logged-in status by clicking the profile avatar on individual posts or from the side bar for the popular profiles. The user is then taken to the profile of the clicked user where all the posts are listed in a list view with the most recent appearing at the top.
+
+
+`As a User, I can keep scrolling through the posts list on the site, that are loaded for me automatically so that I don't have to click on "next page" to view more.`
+
+- Infinite scroll has been implemented so that the user doesn't have to use page pagination which 
+  makes the experience nice and smooth for a social media platform.
+
+`As a user, I can navigate through pages quickly so that I can view content seamlessly without page refresh.`
+
+- Routing is implemented to allow user to seamlessly navigate through content without having to wait for the page to refresh every time user clicks on something. This has been done throughout the entire website pages.
+
+
+- Home Page View for unauthorised(all) users(large screens):
+
+![home_page_view_unauthorised](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716928538/post_list_view_unauthorised_hdx256.png)
+
+- Home Page View for authorised users(large screens):
+
+![home_page_view_authorised](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716928536/post_list_view_authorised_rasd0c.png)
+
+
+- Home Page View for all users(medium to small screens):
+
+![home_page_view_small_screens](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716928539/post_list_view_small_screens_lm3bxi.png)
+
+
+
+
+
+
 
 
 
