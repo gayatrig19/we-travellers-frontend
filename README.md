@@ -441,7 +441,7 @@ Each of the Home page features is described as follow:
      - Firefox
      - Internet Explorer
 
-I was not able to use the app on Iphone and Safari. It registers the new user account however it won't allow to sign in, I have found that everyone submitting the project has the same issue and this can not be fixed. [Sean explains it here](https://code-institute-room.slack.com/archives/C02MTH5MBDG/p1659719243446449?thread_ts=1659705919.570999&cid=C02MTH5MBDG)
+I was not able to use the app on Iphone and also on Safari browser(on all devices). It registers the new user account however it won't allow to sign in, I have found that everyone submitting the project has the same issue and this can not be fixed. [Sean explains it here](https://code-institute-room.slack.com/archives/C02MTH5MBDG/p1659719243446449?thread_ts=1659705919.570999&cid=C02MTH5MBDG)
 
 
 ### Accessibility
@@ -460,16 +460,30 @@ I was not able to use the app on Iphone and Safari. It registers the new user ac
 - Accessibility test result for [website](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716938607/wave_accessibility_testing_vo9lfh.png)
 
 
-  
-
-
 ### Lighthouse
 
 ### Validator Testing
 
 #### HTML Validation
 
+I have not validated the code for HTML validation, as it is validated with the elint alongside JavaScript while using React for front-end. 
+
+In order to check HTML code in dynamic website using the [W3C VALIDATOR](https://validator.w3.org/):
+
+- go to the live page
+- click right and select 'Inspect' then click right and select 'View page source'
+- code will open in new tab - copy the code
+- paste the code in the validator as 'direct input'
+
+
 #### CSS Validation
+
+Each of the CSS files are checked for errors and validated with success results.
+
+No errors were found when passing through the official Jigsaw W3 Validator
+
+![css_validation_result](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716938595/css_validation_image_pm2kxy.png)
+
 
 #### JavaScript Validation
 
@@ -482,9 +496,23 @@ I was not able to use the app on Iphone and Safari. It registers the new user ac
 
 ##### Negative Testing
 
+
 ### Automated Testing
 
 #### Unit Testing
+
+Automated Testing is carried out only for the navbar component. For the tests I have referred the CI Moments Walkthrough. 
+  - used the msw library to mock user and logout endpoints
+  - tested the NavBar component:
+    - renders without a problem
+    - renders the link to a user profile for a logged in user
+    - renders the sign in and sign up buttons again on logout
+
+- Link to test files can be found here: [NavBar](https://github.com/gayatrig19/we-travellers-frontend/tree/main/src/components/__tests__)
+
+- Unit tests outcome when run ``npm test``:
+![automated_testing_result_navbar](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716940527/navbar_links_tests_on1csz.png)
+
 
 ## Bugs
 
