@@ -33,8 +33,6 @@ We Travellers website is developed as a Portfolio Project#5 (Advanced Front End 
     - [Design/ Colour-Scheme/ Typography/ Images](#design-colour-scheme-typography-images)
   - [Technologies](#technologies)
     - [Tools and Technologies](#tools-and-technologies)
-    - [Imports](#imports)
-      - [Installed Packages](#installed-packages)
   - [Testing](#testing)
     - [Responsiveness](#responsiveness)
     - [Accessibility](#accessibility)
@@ -217,7 +215,7 @@ Each Milestone covers the user stories for small features allowing me to priorit
 ### Tools and Technologies
 
 - Node - package manager used to install dependencies
-- React - framework used for UI
+- React - a JavaScript library used for building websites' UI.
 - Bootstrap React - CSS framework used for responsive design
 - Gitpod - used to develop the website
 - [GitHub](https://github.com/) to host the source code. 
@@ -230,7 +228,8 @@ Each Milestone covers the user stories for small features allowing me to priorit
 - [FontAwesome](https://fontawesome.com/v5/search) v5.15.4 for website icons.
 - [Favicon.io](https://favicon.io/) to create the website favicon.
 - [Canva](https://www.canva.com/) user to create the website logo.
-- [Cloudconvert](https://cloudconvert.com/jpg-to-webp) to convert .jpg images into .webp to reduce the storage and enhance the website performance.    
+- [Cloudconvert](https://cloudconvert.com/jpg-to-webp) to convert .jpg images into .webp to reduce 
+  the storage and enhance the website performance.    
 - [TinyJPG](https://tinyjpg.com/) to optimise images for website.
 - Balsamiq to design the wireframes for the website.
 - Google Chrome's Lighthouse to test accessibility for desktop and mobile devices.
@@ -241,10 +240,6 @@ Each Milestone covers the user stories for small features allowing me to priorit
 - [SmartDraw](https://www.smartdraw.com/) used to generate the ER Diagram
 - [Am I Responsive](http://amiresponsive.blogspot.com/) to create the Mockup image in this README.
 - Code Institute's Gitpod Template to generate the workspace for the project.
-
-### Imports
-
-#### Installed Packages
 
 
 
@@ -281,15 +276,81 @@ Each Milestone covers the user stories for small features allowing me to priorit
 
 ### Console errors
 
+
 ## Deployment
 
 ### Version Control
 
+- The front-end website is developed using CI gitpod template.
+- Code has been pushed to repository on Github with following git commands:
+
+    - ``git add`` . - to add files ready to commit
+    - ``git commit -m "message"`` - to commit the code to local repository ready to be pushed
+    - ``git push`` - final command used to push committed code to remote repo on Github
+
 ### Deploying in Heroku
+
+- The project has been deployed on Heroku as follows:
+  - Use: ``pip freeze > requirements.txt`` to add external libraries to the deployed app.
+  - Create Heroku account
+  - In the top right, click 'New'
+  - Click 'Create new app'
+  - Give your app a name and select your region from drop down
+  - Click 'Create new app'
+  - Scroll down to 'Buildpacks' section
+  - Click 'Add buildpack'
+  - Add Python as first dependency and select 'Save changes'
+  - Add node.js as a second dependency and save again (This is settings section done)
+  - Select 'Deploy' tab at the top
+  - Select ' Github' from 'Deployment method'
+  - type the name of how you called project in Github and click 'search'
+  - Scroll down and select manual deployment method
+  - You can also use Auto deployment method to allow the project to update every time you push the 
+    code.
+  - You can now click to view the app ready and running
+- For this project I used Manual deployment method to deploy the current state of the branch, every time I pushed the code from Gitpod.
+
+- Once you have the deployment of front end-done you can connect it to API:
+  - Go to your drf api in Heroku
+  - Add Config Vars within settings section: 
+    - 'CLIENT_ORIGIN_DEV' as key with a value of: link to your local host (front-end) no quote  
+      marks no forward slash at the end.
+    - 'CLIENT_ORIGIN' as key and value of: URL to your deployed front end repo from heroku
+    - In front end workspace install ``npm install axios``
+    - Create a folder 'API' --> AND FILE : 'axiosDefaults'
+    - At the top of the file import axios and define your baseURL which is the URL of your backend
+      deployed API project 
+    - Set content-type header to multi-part/form-data as the API will need to deal with images as 
+      well as text in it's requests.
+    - To avoid any CORS issues, set withCredentials to True.
+    - Import this file into App.js to be used across all pages
+
 
 ### Cloning the Repository
 
+1. On Github navigate to the repository
+2. Click "Code" drop down menu - a green button shown right above the file list.
+3. Copy the URL of the repository using "HTTPS", "SSH" or "Github CLI".
+4. Open Git Bash.
+5. Change the current working directory to the location where you want the cloned directory.
+6. Type "git clone", and then paste the URL copied earlier.
+7. Press enter to create local clone. A clone of the repository will now be created.
+
+For more details on how to clone the repository in order to create a copy for own use refer to the site: <https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository>
+
+
 ### Forking
+
+1. On Github navigate to the repository.
+2. Click "Fork" located towards top right corner on GitHub page.
+3. Select "owner" for the forked repository from the dropdown menu under "owner".
+4. It will create forked repo under the same name as original by default. But you can type a name in "Repository name" or add a description in "Description" box.
+5. Click on "Create fork". A forked repo is created.
+
+- Forking allows you to make any changes without affecting original project. You can send the the suggestions by submitting a pull request. Then the Project Owner can review the pull request before accepting the suggestions and merging them.
+- When you have fork to a repository, you don't have access to files locally on your device, for getting access you will need to clone the forked repository.
+- For more details on how to fork the repo, in order to for example suggest any changes to the project you can visit:<https://docs.github.com/en/get-started/quickstart/fork-a-repo>
+
 
 ## Credits
 
