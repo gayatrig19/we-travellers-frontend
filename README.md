@@ -190,6 +190,79 @@ Each Milestone covers the user stories for small features allowing me to priorit
 
 ### Features
 
+All the features are implemented with user stories in mind.
+
+### Favicon
+
+`As a developer, I need to add favicon to the website so that users can locate pages easily when they have multiple tabs open.`
+
+![favicon_image](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716912140/favicon_icon_image_xb18fq.png)
+
+- Favicon icon for the website is displayed within the tab so that the user is able to easily find the tab and navigate to the website if a number of sites are opened at the same time.
+
+### Navigation Menu
+
+`As a User, I can see my logged in status, so that I know I need to log in or log out as needed.`
+
+`As a user, I can see different authentication options within nav bar depending on my log in status so that I'm not confused with my current log in status`
+
+`As a user, I can view a navbar from every page so that I can navigate easily between pages.`
+
+- Navbar for large screens (unauthorised users):
+
+![Navbar_large_screen_unauthorised_users](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716912973/navbar_large_screen_unauthorised_jn0hs2.png)
+
+- Navbar for large screens (authorised users):
+
+![Navbar_large_screen_authorised_users](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716912973/navbar_large_screen_authorised_pvutro.png)
+
+- Navbar for small screens (unauthorised users):
+
+![Navbar_small_screen_unauthorised_users](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716912974/navbar_small_screen_unauthorised_faou6j.png)
+
+- Navbar for small screens (authorised users):
+
+![Navbar_small_screen_unauthorised_users](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716912974/navbar_small_screen_authorised_cjouwd.png)
+
+
+- Navigation bar is shown the same on all pages for consistent design and good UX. Responsive design allows for hamburger bar on smaller screens. When user is logged in - a user profile avatar and username is displayed. The displayed name and avatar for navbar is implemented to give a more personalized touch every time user visits the website.
+- The aim of the feature is so that the user can easily navigate around the website pages. Username and the profile avatar shown is there for confirmation of logged in state for user on each page. Options the user can select differ based on whether the user is logged in or not. This is so that the nav bar isn't overcrowded and is simple and intuitive to use.
+- Following options are displayed to the users based on their logged-in status:
+  - Home - for all users
+  - Sign Up - for unauthorised users
+  - Sign in - for unauthorised users
+  - Sign out - for authorised users
+  - Feed - for authorised users
+  - Liked - for authorised users
+  - Bookmarks - for authorised users
+  - Profile Avatar and Username - for authorised users
+  - Add Post - for authorised users
+
+### Sign in / Sign up / Log out
+
+`As a user, I can create a new account so that I can access all the features for signed up users.`
+
+
+
+
+`As a user, I can sign in to the app so that I can access functionality for logged in users.`
+
+
+
+`As a logged in user, I can stay logged in so that I can keep using the features until I log out myself.`
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### Reusable Components
 
 ### Features Left to Implement
