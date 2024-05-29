@@ -746,6 +746,21 @@ The design for add post and edit post remains same. The difference is shown wher
 
 ### Design/ Colour-Scheme/ Typography/ Images
 
+#### Design and Colour-Scheme
+
+The website uses clean, simple design with a mix of cool and earthy colour tones and images that showcases the primary goal of the website. The aim here was to keep the site clutter-free so that user can have a smooth straight-forward navigation experience throughout without any chaos and confusion. The website colour was selected to be light on users, so that users are not distracted by the background and are engaged with the website content. The use of such design also aims to align with the essence of the website and the site goals.
+
+
+#### Typography
+
+[DM Sans](https://fonts.google.com/specimen/DM+Sans) a google font, is used throughout the website.
+With website consideration it was best suited as it gives a modern and versatile look to the content throughout on pages. The accessibilty and user experience, both are achieved with this as the font is easy to read, clear on all screen sizes and for all font sizes making it good choice to use for a social media platform.
+
+#### Images
+
+- The images in this project are sourced from [Pexels](https://www.pexels.com/), [Unsplash](https://unsplash.com/) and [Pixabay](https://pixabay.com/). 
+- They were specifically selected to correlate with the main purpose of the website and to give    user a imagery representation for the travel content to increase impact of the design.
+- The website logo is designed using [canva](https://www.canva.com/)
 
 
 ## Technologies
