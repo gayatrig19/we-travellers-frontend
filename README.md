@@ -406,6 +406,101 @@ Each of the Home page features is described as follow:
 
 - Note that if logged-in user has previously liked or bookmarked a post, on hovering over the icons, a overlay text will be displayed that says, unlike a post(for liked ones) and remove post from bookmarks(for bookmarked post)
 
+#### Add Post
+
+`As a logged-in User, I can post an image so that I can share my travel experience with others.`
+
+![add_post_option](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716981981/add_post_option_zu88fi.png)
+
+
+- The add post icon for users to create a travel post is accessible through navigation bar. This feature is available for logged-in users only. Only clicking the add post icon, user is directed to the Post create form with all the fields displayed to fill up. 
+
+![add_post_form](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716982122/add_post_form_oducyv.png)
+
+- Following fields have been added to the form:
+  - Title - required
+  - image to upload - required
+  - content - optional, this provides user flexibilty to share their travel experience without a   brief information, if user wants to just share their travel images with the community.
+  - place - required
+  - region - optional, as the default value is set to Europe(decided to keep it as default when searched for the most visited locations on google), users if decide to not select the region from the dropdown menu, the post will have Europe as it's region in the given field. Users can though change it by choosing one of the options as per their post requirements.
+
+- This is the main feature of the website without which the website intent would not be fulfilled.
+- The aim of the feature is to allow user to share their travel experience with the community.
+
+
+#### Edit or Delete a Post
+
+`As a logged-in post owner, I can edit my own posts so that I can make corrections or update my post after it was created.`
+
+`As a logged-in post owner, I can delete my own posts so that I can remove the posts I don’t want to share anymore.`
+
+![edit_delete_posts_option](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716983600/edit_delete_option_posts_tk6iax.png)
+
+
+![post_edit_form](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716987212/post_edit_form_nduiux.png)
+
+- CRUD Functionality: This feature is available only if user is logged in and the post belongs to the logged in user, when clicked on three dots menu:
+  - user will see and icon for edit and icon for delete, when hovered over the icons overlay text will be displayed that says Edit and Delete respectively.
+  - if user clicks on edit icon - this will take them to the already pre-populated post form which looks same the post add form, here the fields are already filled with their previously created respective posts. User can change whatever they want and save the posts to keep the changes made.
+  - if user clicks on the trash-bin icon, the post is deleted and user is taken back to the page they were. This feature allows user to remove their posts that they no longer wants to share or keep on their profile.
+
+- Note that the cancel button on both add post form and edit form if clicked by the user, user will be directed(taken back) to the page they were on. This feature avoids the user from any confusion during the navigation between the pages on the website providing a seamless user experience the entire time.
+
+
+#### Comments
+
+##### Comments CRUD functionality
+
+`As a logged in user, I can add comments to a post so that I can share my thoughts about the post and engage with the community.`
+
+![add_comment_form](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716985286/add_comments_authorised_cfh569.png)
+
+- The comments on posts are displayed on clicking the comments icon on each post displayed in a list view on the home page. User is directed to the post detail view were:
+  - if user is authorised, a form to add comments to the post will be displayed. On adding the 
+    comment, it will be displayed under the form along with other comments of present and the number of comments count on the post will be increased by 1. If there are no comments on the relevant posts a message is displayed - No comments yet..be the first to comment
+  - if user is unauthorised, the comment form will not be displayed rather if comments are present 
+    they will be displayed under the posts. If no comments are yet made on the posts, users are encouraged to login to leave a comment and be the first one to post it.
+- This feature allows users to share their views about the post and show appreciation to the    post / post owner. The main aim of this feature is to enable user to engage with the communtiy and involve in the conversation with the other like-minded travelers.
+- The comments like icon is provided for the user to like / unlike comments of other users and show interest in the conversation. The functionality is discussed below.
+
+
+`As a user I can read comments on posts so that I can read what other users think about the posts.`
+
+![comments_list_view](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716985332/comments_list_view_qyl06p.png)
+
+- The comments list is displayed to all users regardless of their logged-in status. When the users clicks on the comments icon on the post (on home page), they are directed to the post detail page, where all the comments are displayed under the post.
+
+- This feature allows users to read the comments on the given posts and know how the post has impacted other users and what are their opinions on the post content.
+
+
+`As a User, I can keep scrolling through the comments on the site so that I don't have to click on "next page" to view more comments.`
+
+- Infinite scroll has been implemented for the comments list so that the user doesn't have to use 
+  page pagination(disturbing the flow of the content). This feature makes the experience nice and smooth for a social media platform and the users consuming the content on it.
+
+
+`As a logged-in owner of a comment I can edit my comment so that I can fix or update my existing comment.`
+
+`As an owner of a comment I can delete my comment so that I can remove the comments I don't want to be posted anymore.`
+
+![comment_edit_delete_option](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716987302/edit_delete_comment_ym0mez.png)
+
+
+![comment_edit_form](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716987325/comment_edit_form_qeladf.png)
+
+
+This feature is available only if user is logged in and the comment belongs to the logged in user, when clicked on three dots menu:
+  - user will see and icon for edit and icon for delete, when hovered over the icons overlay text will be displayed that says Edit and Delete respectively.
+  - if user clicks on edit icon - this will display them the edit form within same page with already pre-populated comment content form which looks same as the comment add form, here the field is already filled with their previously created respective comment. User can change / update the comment content as they want and save the it to keep the changes made.
+  - if user clicks on the trash-bin icon, the comment is deleted and user is taken back to the page they were. This feature allows user to remove their comments that they no longer wants to share or keep on other users posts.
+
+- The comments CRUD functions within same page, which results in a better UX as users don't have to 
+  navigate through pages to perform the actions, thus keeping users engaged with the content of the site.
+
+
+`As a logged-in User, I can like other users' comments so that I can show my appreciation to their opinion.`
+
+
 
 
 
