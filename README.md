@@ -436,8 +436,11 @@ Each of the Home page features is described as follow:
 
 ![posts_edit_delete_page](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716998171/post_editdelete_page_icons_voxk0j.png)
 
+- Post Edit and Delete Icons:
+
 ![edit_delete_posts_option](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716983600/edit_delete_option_posts_tk6iax.png)
 
+- Post Edit Form:
 
 ![post_edit_form](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716987212/post_edit_form_nduiux.png)
 
@@ -488,9 +491,11 @@ Each of the Home page features is described as follow:
 
 ![comment_edit_delete_page](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716998089/comment_editdelete_page_epikuc.png)
 
+- Comment Edit and Delete Icons:
 
 ![comment_edit_delete_option](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716987302/edit_delete_comment_ym0mez.png)
 
+- Comment Edit Form:
 
 ![comment_edit_form](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716987325/comment_edit_form_qeladf.png)
 
@@ -523,12 +528,12 @@ This feature is available only if user is logged in and the comment belongs to t
 - The list of most popular profiles in the side bar of the page can be viewed through every page on the website and is accessible to all users. The profiles are displayed in descending order with the popular ones at the top. The list is updated depending on number of followers a user has.
 - Clicking on the profile avatar can take user to the selected user profile. The popular profiles view is different for large screen and smaller screen sizes given images below.
 
-- Popular profiles for small screens
+- Popular profiles for small screens:
 
 ![popular_profiles_small_screens](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716997852/popular_profiles_small_screens_zvlyuz.png)
 
 
-- Popular profiles for Unauthorised(left) and authorised Users(right)(large screens)
+- Popular profiles for Unauthorised(left) and authorised Users(right)(large screens):
 
 ![popular_profiles_unauthorised](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716997677/popular_profiles_unauthorised_qvwwjm.png) ![popular_profiles_authorised](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716997776/popular_profiles_authorised_rsgo8m.png)
 
@@ -560,6 +565,7 @@ This feature is available only if user is logged in and the comment belongs to t
 
 ![user_profile_statistics](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717000585/user_profile_stat_jfnnsu.png)
 
+- User Profile Page View:
 
 ![user_profile_page](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717000622/user_profile_page_xv018d.png)
 
@@ -580,6 +586,8 @@ This feature is available only if user is logged in and the comment belongs to t
 
 ![user_profile_edit_page](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717001489/user_information_editing_weul3i.png)
 
+- Profile Edit Form for users(authorised):
+
 ![user_profile_edit_form](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717001528/user_bio_update_form_mmr0wo.png)
 
 - Profile CRUD operations are only accessible if the user is logged-in and the owner of the profile.
@@ -593,8 +601,12 @@ This feature is available only if user is logged in and the comment belongs to t
 
 `As a logged in user (profile owner), I can update my username and password details so that I can change my display name and keep my profile safe.`
 
+- Username Edit form for users(authorised): 
 
 ![username_edit_form](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717001561/user_username_update_form_zy2gyc.png)
+
+
+- Password Edit form for users(authorised): 
 
 ![user_password_edit_form](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717001597/user_password_update_form_uhmcnv.png)
 
@@ -603,16 +615,42 @@ This feature is available only if user is logged in and the comment belongs to t
 - On clicking the key icon, user is directed to the password edit form, where user can enter password and confirm it. User is given warnings if any error occurs in submitting the form(for example, if passwords doesnt match, or if it is too short)
 
 
+#### No results found
+
+![noresults_found_image](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717006673/noresults_found_image_hx2irx.png)
+
+- Users are displayed with the no results found message if:
+    - the search query does not match the keywords(requirements), or the posts they are looking for are not present.
+    - On the feed page, if they have not followed any user profile or the ones followed has not shared any posts
+    - On bookmarks page, if they have no bookmarked posts
+    - On liked page, if they have not liked any posts.
+    - on User profile, if user hasn't posted anything yet.
+
+- This feature allows to convey an appropriate message(feedback) to the users with the actions they are expected to do so that user is not left confused whilst navigating the website content.
 
 
+#### Not Found Page
+
+![notfound_page_image](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717006713/page_notfound_image_lb5shx.png)
+
+- If user tries to enter the page which is not present or the page which is not available on the website(user going to incorrect address), they are given appropriate feedback with page not found message. This feature aims to provide a better UX for users action and the outcome for the same.
+
+- Note: In both the above cases(not found and noresults page), user will still have a nav bar to navigate from the page. The aim of this is to improve user experience and not encourage users to leave the website.
 
 
+#### Form Warnings
 
+All the forms with more than one field have warning messages added into required fields so that it is easier for users to understand why or which fields cause error and stop from submitting
 
+![form_warnings_signup](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717005926/form_warnings_signup_c7zved.png)
 
+- Each and every form on the website is covered for the appropriate warnings to be displayed for 
+users to understand the errors and the actions expected from them.
 
+![form_warnings_add_post](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717006061/form_warnings_addpost_nyoc8i.png)
 
-
+- All this features are incorporated with the aim of improving users' experience while exploring  
+the website content.
 
 
 ### Reusable Components
