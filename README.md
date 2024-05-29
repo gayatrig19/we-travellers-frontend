@@ -325,6 +325,45 @@ Each of the Home page features is described as follow:
 
 `As a User, I can search / filter for posts with keywords so that I can find the posts and user profiles I am curious about and learn more about them.`
 
+`As a logged-in user, I can view content filtered by users I follow so that I can keep up to date with what they are posting about.`
+
+![search_bar_feature](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716974343/search_bar_feature_pncahd.png)
+
+- The search bar feature is available for all users on the home page. Users can search posts by keywords, author(username) of a post, title, region and place. Reason to include all these fields is to allow user to find the travel posts easily and retrieve the results for what they are looking for. The search options is to make user experience as smooth and easy as possible so that they don't have scroll through the list of posts every time and can find the relevant posts they are looking for without wasting any time.
+- The region and place is included in the search field given that the website aims for travelers and they can search for places and destinations to travel that they are interested in easily. This aligns with the website goals for users to have everything at one place for their travel plans and next travel destination.
+- For authorised users, the search bar is available on liked, feed and bookmarks pages so that users can find the posts according to their requirements on the relevant pages.
+- Logged-in users can search the content filtered by username so that they can view the most recent posts by the users they are following. This allows user to stay up to date  with the content of the user they have followed.
+
+#### Posts
+
+`As a User, I can click on a post to view the post details so that I can find out more information about the post.`
+
+- Post Detail View for unauthorised Users:
+![post_detail_view_unauthorised](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716975857/post_detail_view_unauthorised_cjtxq5.png)
+
+
+- Post Detail View for authorised Users:
+![post_detail_view_authorised](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716975857/post_detail_view_authorised_sdttkq.png)
+
+
+- The Post view is same for home page and post detail view page. The post detail view page includes additional information and functionality depending on whether the user is logged-in or not. This feature allows users to view posts in detail shared by others. The aim of this feature (home page) and this content (post) is so that the moment users enter the page, they know the aim of the page and the website itself, keeping anyone who just entered the page interested and encourage them to explore it more. With this feature, it saves user from navigating through another page for getting the post in detail, here it is done by just a single click on the post image(home page) linking to the detail view page, making a hassel free navigation experience for users.
+- For unauthorised users, the post detail view page will be displayed with the like, comments and bookmark icons(if hovered on the icons a message with tool tip is displayed to login to perform action). Also if the post has received comments, they are displayed under the detail view 
+- For logged in users all the options become active under the post detail view. The post detail view contains:
+  - Author username and avatar
+  - Image of the travel post
+  - Title
+  - Content
+  - Place
+  - Region
+  - icon to bookmark post, like post with number of comments, likes and bookmarks the post has 
+    received
+  - comments section and icons to like comments
+
+
+
+
+
+
 
 
 
