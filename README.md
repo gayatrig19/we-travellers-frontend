@@ -434,6 +434,8 @@ Each of the Home page features is described as follow:
 
 `As a logged-in post owner, I can delete my own posts so that I can remove the posts I don’t want to share anymore.`
 
+![posts_edit_delete_page](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716998171/post_editdelete_page_icons_voxk0j.png)
+
 ![edit_delete_posts_option](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716983600/edit_delete_option_posts_tk6iax.png)
 
 
@@ -483,6 +485,10 @@ Each of the Home page features is described as follow:
 
 `As an owner of a comment I can delete my comment so that I can remove the comments I don't want to be posted anymore.`
 
+
+![comment_edit_delete_page](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716998089/comment_editdelete_page_epikuc.png)
+
+
 ![comment_edit_delete_option](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716987302/edit_delete_comment_ym0mez.png)
 
 
@@ -497,24 +503,104 @@ This feature is available only if user is logged in and the comment belongs to t
 - The comments CRUD functions within same page, which results in a better UX as users don't have to 
   navigate through pages to perform the actions, thus keeping users engaged with the content of the site.
 
-
 `As a logged-in User, I can like other users' comments so that I can show my appreciation to their opinion.`
 
+![comment_like_option](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716995882/comments_like_option_mhoigk.png)
+
+- The feature to like comments is implemented so that users can show appreciation to the comment made on the post by other users. This feature enables users to engage with the community and show their interaction with the content. 
+
+- The option to like the comments with the number of likes count is available on the post detail page for the comments made by user. The comment like functionality is implemented as follows:
+  - For unauthorised users: the like option will be displayed hollow and users will get an overlay text that says login to like the comment.
+  - For authorised users: the like option will be active (if user has not perviously liked the comment a hollow icon will be displayed) and on clicking the icon, it will change to solid red colour with the number of likes count increased by 1.
+  - For the owner of the comment, the like option will be displayed with an overlay text to say they can't like their own comments.
+  - Users can unlike the comment by going to the relevant comment and clicking the liked icon(solid red in colour) in front of the comment. The icon will turn hollow with the number of likes decreased by 1.
 
 
+#### Profiles
+
+`As a user, I can see a list of the most followed profiles so that I can see which profiles are popular.`
+
+- The list of most popular profiles in the side bar of the page can be viewed through every page on the website and is accessible to all users. The profiles are displayed in descending order with the popular ones at the top. The list is updated depending on number of followers a user has.
+- Clicking on the profile avatar can take user to the selected user profile. The popular profiles view is different for large screen and smaller screen sizes given images below.
+
+- Popular profiles for small screens
+
+![popular_profiles_small_screens](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716997852/popular_profiles_small_screens_zvlyuz.png)
 
 
+- Popular profiles for Unauthorised(left) and authorised Users(right)(large screens)
+
+![popular_profiles_unauthorised](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716997677/popular_profiles_unauthorised_qvwwjm.png) ![popular_profiles_authorised](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716997776/popular_profiles_authorised_rsgo8m.png)
 
 
+- If the user is logged-in, the popular profiles side bar is rendered with the follow / unfollow button besides each users avatar and username. This brings us to our next user story as follows:
+
+`As a logged in user I can follow other users so that I can see posts by specific users in my posts feed and stay updated with any new posts that they create.`
+
+`As a logged in user I can unfollow other users so that I can remove posts by specific users from my posts feed.`
+
+- The follow and unfollow button are displayed besides the user profile avatar and username at two places: first is on the popular profiles side bar and the second one is on individual users profile page.
+- These options are rendered for logged-in users only. Users can only follow other profiles and not their own. The option to follow / unfollow users own profile is not displayed for the same reason.
+- Once the user has followed the other users' profile:
+    - The users' following count is increased by 1(which is displayed on own profile)
+    - The other users' profile(the one followed) follower count is increased by 1
+    - The posts shared by the users being followed are displayed in the feed of the user who is following them
+
+- If a user unfollows the other user profile, the posts shared by that user will no longer be displayed in the user feed.
+- This feature is implemented to give users a more personalized website experience so that every time they visit the website, they can easily access all the recent posts by the users they are following in their feed without scrolling through the posts on home page to find out the ones that interests them the most, thereby staying up to date with the user content. 
+
+- Users Feed page when they have a followed other users profiles:
+
+![users_feed_page](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716999548/users_feed_page_ps1k1f.png)
+
+`As a user, I can view other users profiles so that I can see their posts and learn more about them.`
+
+`As a user, I can view statistics about a specific user: bio, number of posts, follows and users followed so that I can learn more about them.`
 
 
+![user_profile_statistics](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717000585/user_profile_stat_jfnnsu.png)
 
 
+![user_profile_page](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717000622/user_profile_page_xv018d.png)
 
 
+- User can view other profiles by clicking on the profile avatar and username of the profiles to visit, they will be directed to the profile page of the user where they can view:
+  - The users profile name, avatar, bio, the total number of posts made by user, the total number of users a user is following and the total number of followers for the user.
+  - Users can view all the posts made by the user so far on their selected user profile page. The button to follow / unfollow is displayed on the user profile only if:
+    - the user is not the owner of the profile and
+    - the user is logged-in (authorised)
+
+`As a User, I can use a default profile image so that I don't have to upload my own.`
+
+![user_default_profile_image](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717001307/user_default_profile_image_a2nlni.png)
+
+- A default profile image is modelled in backend database schema, so that on registration and sign in users can see a default profile image as a avatar for their profiles. User can choose to keep it or update the image for more personalized touch. The functionality to update profile imformation such as username, password, profile avatar and bio is implemented so that users can interact with their own profile information and perform CRUD operations on their own profile.
+
+`As a logged in user, I can edit my profile details so that I can keep it up to date.`
+
+![user_profile_edit_page](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717001489/user_information_editing_weul3i.png)
+
+![user_profile_edit_form](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717001528/user_bio_update_form_mmr0wo.png)
+
+- Profile CRUD operations are only accessible if the user is logged-in and the owner of the profile.
+- Users can navigate to their own profile if they want to update their profile information.
+- Within the profile, on clicking the three dots user is given options to:
+     - edit their profile
+     - change username
+     - change password
+
+- Users can navigate to the relevant options on clicking the icons. If user clicks the edit icon, they are directed to profile edut form with pre-populated form fields (if user has added already). User can either update their bio and profile image or choose to cancel. They will be directed to their profile in both instances.
+
+`As a logged in user (profile owner), I can update my username and password details so that I can change my display name and keep my profile safe.`
 
 
+![username_edit_form](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717001561/user_username_update_form_zy2gyc.png)
 
+![user_password_edit_form](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717001597/user_password_update_form_uhmcnv.png)
+
+
+- Users can change their username by clicking on the card icon, the updated username (if changed) will be reflected on the user profile and relevant parts of the website where it exists.
+- On clicking the key icon, user is directed to the password edit form, where user can enter password and confirm it. User is given warnings if any error occurs in submitting the form(for example, if passwords doesnt match, or if it is too short)
 
 
 
