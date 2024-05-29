@@ -663,8 +663,83 @@ the website content.
 
 ### Wireframes
 
+#### Sign In Page
+
+This wireframe is for desktop(large screens). The mobile wireframe would have looked the same with the exception of not having the image and only form to sign in is displayed with a hamburger menu expanded for Home, Sign in and Sign out
+
+![sign_in_page_wireframe](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717015342/sign_in_wireframe_ny3zus.png)
+
+
+#### Sign Up Page
+
+This wireframe is for desktop(large screens). The mobile wireframe would have looked the same with the exception of not having the image and only form to sign up is displayed with a hamburger menu expanded for Home, Sign in and Sign out
+
+![sign_out_page_wireframe](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717015344/sign_up_wireframe_hy2wgp.png)
+
+
+#### Home Page (Post List View):
+
+The home page (Post List View) design structure is same for Feed, Liked and Bookmarks page. The difference is showed using tooltip. As the Feed, Liked and Bookmarks page are only available for logged-in users, I will not be making separate wireframes for them, as the design structure is same as that of home page for logged in(desktop view).
+
+  - Desktop - when user is logged in:
+
+![home_page_authorised_users_wireframe](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717015596/home_page_wireframe_authorised_hym2oa.png)
+
+
+  - Desktop - when user is not logged in:
+
+![home_page_unauthorised_users_wireframe](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717015597/home_page_wireframe_unauthorised_rmtoza.png)
+
+
+  - Mobile - for all users:
+
+The difference for authorised and unauthorised users is shown using tooltip. The design remains same in both cases.
+
+![home_page_mobile_wireframe](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717016071/home_page_wireframe_mobile_nfp6mx.png)
+
+
+#### Post Detail Page
+
+- Post Detail View when user is logged in(desktop):
+
+![post_detail_page_authorised_wireframe](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717016479/post_detail_page_authorised_f6tq51.png)
+
+
+- Post Detail View when user is not logged in(desktop):
+
+![post_detail_page_unauthorised_wireframe](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717016480/post_detail_page_unauthorised_zfw4d8.png)
+
+
+- Post Detail View(Mobile):
+The difference for authorised and unauthorised users is shown using tooltip in the required places.
+
+![post_detail_page_mobile_wireframe](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717016484/post_detailview_wireframe_mobile_kllkqv.png)
+
+
+#### Add Post and Edit Post Pages:
+
+The design for add post and edit post remains same. The difference is shown wherever it is required. The mobile wireframes would have been same with the exception that the upload image icon is stacked on the form on smaller screens.
+
+![add_post_page_wireframe](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717016945/add_post_wireframe_smtxnu.png)
+
+
+#### Profile Page
+
+- Desktop View when user is logged in:
+
+  - Note: Here follow button is displayed on the profile page (at the place of three dots) if the user is not the owner of the profile. The design structure for mobile is responsive with the bootstrap styles applied to it. 
+
+![profile_page_authorised_wireframe](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717017261/user_profile_wireframe_authorised_wbbpra.png)
+
+
+- Desktop View when user is not logged in:
+
+![profile_page_unauthorised_wireframe](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717017263/user_profile_wireframe_unauthorised_ltmf51.png)
+
+
 ### Database Design
 
+- For detailed database model design please visit this link: [BACK-END REPO](https://github.com/gayatrig19/we-travellers-api)
 
 
 ## The Surface Plane
