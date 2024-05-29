@@ -338,17 +338,14 @@ Each of the Home page features is described as follow:
 
 `As a User, I can click on a post to view the post details so that I can find out more information about the post.`
 
-- Post Detail View for unauthorised Users:
-![post_detail_view_unauthorised](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716975857/post_detail_view_unauthorised_cjtxq5.png)
+- Post Detail View for unauthorised and authorised Users:
 
-
-- Post Detail View for authorised Users:
-![post_detail_view_authorised](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716975857/post_detail_view_authorised_sdttkq.png)
+![post_detail_view_unauthorised](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716975857/post_detail_view_unauthorised_cjtxq5.png) ![post_detail_view_authorised](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716975857/post_detail_view_authorised_sdttkq.png)
 
 
 - The Post view is same for home page and post detail view page. The post detail view page includes additional information and functionality depending on whether the user is logged-in or not. This feature allows users to view posts in detail shared by others. The aim of this feature (home page) and this content (post) is so that the moment users enter the page, they know the aim of the page and the website itself, keeping anyone who just entered the page interested and encourage them to explore it more. With this feature, it saves user from navigating through another page for getting the post in detail, here it is done by just a single click on the post image(home page) linking to the detail view page, making a hassel free navigation experience for users.
 - For unauthorised users, the post detail view page will be displayed with the like, comments and bookmark icons(if hovered on the icons a message with tool tip is displayed to login to perform action). Also if the post has received comments, they are displayed under the detail view 
-- For logged in users all the options become active under the post detail view. The post detail view contains:
+- For logged in users all the options are active under the post detail view. The post detail view contains:
   - Author username and avatar
   - Image of the travel post
   - Title
@@ -358,6 +355,56 @@ Each of the Home page features is described as follow:
   - icon to bookmark post, like post with number of comments, likes and bookmarks the post has 
     received
   - comments section and icons to like comments
+
+#### Like Posts
+
+`As a logged in user, I can like a users' posts so that I can show my appreciation for the posts and authors that interest me.`
+
+![like_post_option](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716979350/like_posts_option_dlqczj.png)
+
+- The option to like posts with the number of likes count is available throughout all pages on the website. The like functionality is implemented as follows:
+  - For unauthorised users: the like option will be displayed hollow and users will get an overlay text that says login to like the post.
+  - For authorised users: the like option will be active (if user has not perviously liked the post a hollow icon will be displayed) and on clicking the icon, it will change to solid red colour with the number of likes count increased by 1.
+  - For the owner of the posts, the like option will be displayed with an overlay text to say they can't like their own posts.
+
+`As a logged-in User, I can view the posts I liked so that I can find the posts that I enjoy the most.`
+
+- All the posts the user has liked will be displayed in a list view on Liked page. The Liked page is accessible to the logged-in users through nav bar. Within the liked page, the posts will be displayed with like option to be solid red colour. 
+
+
+![liked_post_view](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716979443/liked_page_view_dx4cqi.png)
+
+
+`As a logged-in user, I can unlike a post so that I can remove a like if I don't feel to like the post anymore.`
+
+![unlike_post_option](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716979380/unlike_post_option_lwcuai.png)
+
+- The option to unlike the posts(if previously liked) is available for logged-in users only. The icon will be displayed in a solid red colour. If user clicks the icon to unlike the post, it will return to hollow icon, with number of likes decreased by 1. The posts that are unliked by the user will be removed from their liked page.
+
+
+#### Bookmark Posts
+
+`As a logged-in User, I can bookmark the posts so that I can save posts and revisit them later.`
+
+![bookmark_posts_option](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716980418/bookmark_post_option_xflgi3.png)
+
+- The option to bookmark posts with the number of bookmarks count is available throughout all pages on the website. The bookmark functionality is implemented as follows:
+  - For unauthorised users: the bookmark option will be displayed hollow and users will get an overlay text that says login to bookmark the post.
+  - For authorised users: the bookmark option will be active (if user has not perviously bookmarked the post a hollow icon will be displayed) and on clicking the icon, it will change to solid colour with the number of bookmark count increased by 1.
+  - For the owner of the posts, the bookmark option will be displayed with an overlay text to say they can't bookmark their own posts.
+
+![bookmarks_page_view](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716980749/bookmarks_page_view_fcvqqu.png)
+
+- All the posts the user has bookmarked will be displayed in a list view on Bookmarks page. The Bookmarks page is accessible to the logged-in users through nav bar. Within the bookmarked page, the posts will be displayed with bookmarked option to be in solid colour. 
+
+
+`As a logged-in User, I can remove bookmark tags (labels) from the posts so that they are no longer displayed on the bookmarks page.`
+
+![remove_bookmark_option](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716980670/remove_bookmark_option_gfytsp.png)
+
+- The option to remove bookmarks(label) from the posts(if previously bookmarked) is available for logged-in users only. The icon will be displayed in a solid colour. If user clicks the icon to remove the bookmark label from the post, it will return to hollow icon, with number of bookmarks decreased by 1. The posts that are removed from bookmarks(unbookmarked) by the user will not be displayed on their bookmarks page any longer.
+
+- Note that if logged-in user has previously liked or bookmarked a post, on hovering over the icons, a overlay text will be displayed that says, unlike a post(for liked ones) and remove post from bookmarks(for bookmarked post)
 
 
 
