@@ -748,13 +748,15 @@ The design for add post and edit post remains same. The difference is shown wher
 
 #### Design and Colour-Scheme
 
-The website uses clean, simple design with a mix of cool and earthy colour tones and images that showcases the primary goal of the website. The aim here was to keep the site clutter-free so that user can have a smooth straight-forward navigation experience throughout without any chaos and confusion. The website colour was selected to be light on users, so that users are not distracted by the background and are engaged with the website content. The use of such design also aims to align with the essence of the website and the site goals.
+- The website uses clean, simple design with a mix of cool and earthy colour tones and images that showcases the primary goal of the website. The aim here was to keep the site clutter-free so that user can have a smooth straight-forward navigation experience throughout without any chaos and confusion. 
+- The website colour was selected to be light on users, so that users are not distracted by the background and are engaged with the website content. The use of such design also aims to align with the essence of the website and the site goals.
 
 
 #### Typography
 
-[DM Sans](https://fonts.google.com/specimen/DM+Sans) a google font, is used throughout the website.
-With website consideration it was best suited as it gives a modern and versatile look to the content throughout on pages. The accessibilty and user experience, both are achieved with this as the font is easy to read, clear on all screen sizes and for all font sizes making it good choice to use for a social media platform.
+- [DM Sans](https://fonts.google.com/specimen/DM+Sans) a google font, is used throughout the website.
+- With website consideration it was best suited as it gives a modern and versatile look to the content throughout on pages. 
+- The accessibilty and user experience, both are achieved with this as the font is easy to read, clear on all screen sizes and for all font sizes making it good choice to use for a social media platform.
 
 #### Images
 
@@ -887,6 +889,54 @@ No errors were found when passing through the official Jigsaw W3 Validator
 
 #### Functional Testing
 
+|  Testing   |   Action   |    Expected    |  Actual  |
+|-------------|-------------|----------------|----------|
+| Post list view returns all posts(any auth state) | Go to <https://we-travellers-3efa8cc2d788.herokuapp.com/> | all posts display in descending order based on created and updated date | as expected |
+| Post List View Infinite Scroll | Scroll through posts list | User doesn't need to use page pagination, user can keep scrolling infinitely through list view even if more than 20 posts available | as expected |
+| Search Bar returns posts by keywords (any auth state) | Navigate to home page, feed, liked, or bookmarks link within nav bar, type a keyword to search | posts with the keyword either in title, username, place or region is returned | as expected |
+| Post Details returned correctly when clicked on post from list view (any auth state) | Click on the image of post in list view | User taken to correct post detail view. All details rendered for correct advert | as expected |
+| Add Post - logged in users | Click on 'Add Post' link from navbar, enter all the required fields, click submit | User taken to detail view with all correct post details | as expected |
+| Edit Post - logged in users | Select three dots drop down menu from post detail view, select edit icon | User taken back to post form with all details already pre-populated, correct details shown, user changes any field and submits a form. user gets redirected back to advert detail view, all correct updated details show | as expected |
+| Delete Post - logged in users | Select three dots drop down menu from post detail view, select delete icon | Post is deleted and user gets redirected back to last page they were on | as expected|
+|Bookmark post option - other users posts- signed out | Hover over then Click on bookmark to save any posts | User can see an overlay message to log in to bookmark posts, when clicked - no action performed | as expected |
+|Bookmark post option - own post- logged in |	Hover over then click the icon |	User can see a message that they can see own posts within own profile, when clicked nothing happens	| as expected |
+|Bookmark post option - other users post- signed in |	Sign in and click on bookmarks icon to bookmark someone else's post | Icon now shows as solid with count increased by 1 , post shows within list view when clicked on 'Bookmarks' link from nav bar |	as expected |
+|Bookmarks link from NavBar - logged in | Sign in, click on 'Bookmarks'  from navbar |	User can see posts they have bookmarked, no unbookmarked posts shows within the list |	as expected |
+|Most Followed Profiles - any auth state |	Check the profile list with avatar and username displayed |	User checks each user profile from sidebar, profiles most followed show at the top |	as expected |
+|Like post option - other users posts - signed out | Hover over then Click on like icon to like any posts | User can see an overlay message to log in to like the posts, when clicked - no action performed | as expected |
+|Like post option - own post- logged in |	Hover over then click the icon |	User can see a message that they can't like their own posts when clicked nothing happens	| as expected |
+|Like post option - other users post - signed in |	Sign in and click on like icon to like someone else's post | Icon now shows as solid red with count increased by 1 , item shows within list view when clicked on 'Liked' link from nav bar |	as expected |
+|Liked link from NavBar - logged in | Sign in, click on 'Liked'  from navbar |	User can see posts they have liked, no unliked posts shows within the list |	as expected |
+| Profile avatar from Post View or Most Followed profiles side bar - any auth state |	Click on profile avatar from post view or side bar |	User directed to profile page view, user can see correct profile details: Username, bio if available, posts number, number of followers, number of following and user posts list if available |	as expected |
+| Profile avatar with username link from nav bar-logged in |	Click on the profile avatar with username link |	User directed to profile page view, user can see correct profile details |	as expected |
+| Sign out - logged in | Click on sign out link from nav bar |	User logged in, redirected to home page, links to sign in and sign-up now available within nav bar. Profile avatar with username, feed, liked and bookmarks link no longer within nav bar |	as expected |
+|Sign in - logged out |	Click on Sign in link from nav bar, click on Sign in link from Sign up page |	User directed to sign in page, user enters correct username and password, user is directed to last page they were on |	as expected |
+| Sign up - logged out |	Click on sign up link from nav bar, click on sign up link from sign in page |	User enters username and password twice to confirm, user gets directed to sign in page |	as expected |
+| Logo and Home link from nav bar - any auth state|	Click on logo | User directed to home page |	as expected |
+| Comments option - any auth state | Click on comments icon from post lists view | User is directed to the post detail view with comments displayed under posts | as expected |
+| Comments Form - Add Comments - logged in | Add comment in the form under post detail view and click post | User can see the comment within the list view at the top | as expected |
+| Comments List view - any auth | Click on comments icons in post list view if not there yet | User can see comment list view with most recent comments at the top | as expected |
+| Comments Edit Form - logged in - own comment | Select three dots drop down menu within the comment, select edit icon | User can see comment within the edit form, user updates the comment and save it. User can see the edited comment within the list now | as expected |
+| Comment delete - logged in - own comment |  Select three dots drop down menu within the comment, select delete icon | Comment deleted and no longer displays within the comment list | as expected |
+| Like comment option - other users comments - signed out | Hover over then Click on like icon to like any comment | User can see an overlay message to log in to like the comments, when clicked - no action performed | as expected |
+|Like comment option - own comment - logged in |	Hover over then click the icon |	User can see a message that they can't like their own comments when clicked nothing happens	| as expected |
+|Like comment option - other users comments - signed in |	Sign in and click on like icon to like someone else's comments | Icon now shows as solid red with count increased by 1 |	as expected |
+|Comments Infinite Scroll - any auth state | Scroll through Comments list | User doesn't need to use pagination even if more than 20 comments available withing the list | as expected |
+| Follow option from most followed profiles or other user profile page view - signed in |	Sign in and click on follow button to follow other users profiles | Follow button now shows as unfollow with count increased by 1 for followers and following for both users, post shows within list view when clicked on 'Feed' link from nav bar | as expected |
+| Profile edit - own profile - logged in |	User clicks on three dots dropdown menu |	User can see options to edit profile, change username, change password | as expected |
+| Edit Profile - logged in profile owner |	Click on edit profile option |	User taken to profile edit form, image and bio prepopulated with existing details, on submit user gets directed to previous page |	as expected |
+| Change Username - logged in profile owner |	Click on change username option |	User taken to username edit form, username form prepopulated with existing data, on submit user gets directed to previous page |	as expected |
+| Change password - logged in profile owner |	Click on change password option |	User taken to password change form, user enters valid password and confirms password again, on submit user gets directed to previous page |	as expected |
+| User Profiles own posts - any auth state |	Click on profile owners avatar from any tab or page |	User can see list of posts that belong to that profile, posts are listed with most recently added/updated at the top |	as expected |
+| Most Followed Profiles list side bar - any auth state |	User selects any of the profiles from the most followed profiles side bar |	User directed to that profile page, user can see correct profile details | as expected |
+|Page Not Found - any auth state |	Enter incorrect URL |	User receives an error page with 'page not found' message | as expected |
+|NO RESULTS- any auth state |	search for keyword that doesn't exist across the posts |	User receives no results message page	| as expected |
+
+
+
+
+
+
 ##### Links and Buttons
 
 ##### Negative Testing
@@ -903,9 +953,10 @@ Automated Testing is carried out only for the navbar component. For the tests I 
     - renders the link to a user profile for a logged in user
     - renders the sign in and sign up buttons again on logout
 
-- Link to test files can be found here: [NavBar](https://github.com/gayatrig19/we-travellers-frontend/tree/main/src/components/__tests__)
+- Link to test files can be found here: [NavBar](https://github.com/gayatrig19/we-travellers-frontend/blob/main/src/components/__tests__/NavBar.test.js)
 
 - Unit tests outcome when run ``npm test``:
+
 ![automated_testing_result_navbar](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716940527/navbar_links_tests_on1csz.png)
 
 
