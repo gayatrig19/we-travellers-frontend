@@ -933,7 +933,7 @@ No errors were found when passing through the official Jigsaw W3 Validator
 |NO RESULTS - any auth state |	search for keyword that doesn't exist across the posts |	User receives no results message page	| as expected |
 
 
-##### Links and Buttons
+#### Links and Buttons
 
 |  Testing   |   Action   |    Expected    |  Actual  |
 |-------------|-------------|----------------|----------|
@@ -953,9 +953,14 @@ No errors were found when passing through the official Jigsaw W3 Validator
 |'Comments icon' from post container - logged in |	click on comments icon |	user now have access to comment form |	as expected |
 
 
-##### Negative Testing
+#### Negative Testing
 
-
+|  Testing   |   Action   |    Expected    |  Actual  |
+|-------------|-------------|----------------|----------|
+|Add Post - logged in |	Click on 'Add Post' link from nav bar, enter all the required form fields apart from image , click create |	User receives a warning message indicating which field needs attention. User needs to correct the error before they can successfully submit the form |	as expected |
+|Edit Post - logged in | Select three dots drop down menu from post detail view, select edit icon |	User taken back to post form with all details already pre-populated, correct details shown, user removes place details and leaves the field blank, user submits the form, user can see a warning next to the field that requiers attention, user won't be able to successfuly submit the form until they correct the error |	as expected |
+|Change Username - logged in profile owner | Click on change username option, select username that already exists |	User receives a warning message against the form filled to say that the username already exists. User won't be able to submit this form until corrected |	as expected |
+| Change password - logged in profile owner |	Click on change password option, input password 1 and password 2 that doesn't match password 1 | User  receives a warning to say the fields don't match. User won't be able to submit the form until corrected |	as expected |
 
 
 ### Automated Testing
