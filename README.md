@@ -884,6 +884,20 @@ No errors were found when passing through the official Jigsaw W3 Validator
 
 #### JavaScript Validation
 
+During development, ESLint was integrated into the gitpod IDE. This integration enables real-time analysis of the code as it's written, providing immediate feedback on potential issues. ESLint rules are applied to the code, and if violations or possible errors are detected, warnings or errors are displayed directly in the terminal.
+
+For example, when working on a component, ESLint might show warnings like this:
+
+![eslint_compiled_errors](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717035487/eslint_compiled_warnings_yoybik.png)
+
+Throughout the development of We Travellers, ESLint has been instrumental in identifying and resolving problematic code patterns. The codebase has been kept clean and adheres to the recommended JavaScript best practices. On successful compilation, the code is executed through running the development server with no errors and warnings.
+
+When running ``npx eslint`` in the terminal, the linting check is performed on the entire codebase, including files that may not be currently open or actively being edited. This enables the detection of linting errors that may not have been captured by the "regular" ESLint setup during development.
+
+Along with Eslint, Prettier is also used to check the codebase and keep the files free of error during development. Code is successfully passed through Eslint with no errors.
+
+![eslint_testing_results](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717035488/eslint_testing_output_tljt9j.png)
+
 
 ### Manual Testing
 
