@@ -1,16 +1,17 @@
 # We Travellers
 
-This README is for the React front-end of a full stack application - We Travellers.
+This README is for the React front-end full stack application - We Travellers.
 
-   - Link to the live site:
-   - Live API link goes here  
-   - [Link to the Back-end repository](https://github.com/gayatrig19/we-travellers-api) 
+   - Link to the live site: [We Travellers](https://we-travellers-3efa8cc2d788.herokuapp.com/)
+   - Link to live API: [We Travellers API](https://we-travellers-api-125fa063dfcb.herokuapp.com/)
+   - Link to Backend Repository: [we-travelleres-api](https://github.com/gayatrig19/we-travellers-api) 
+
 
 To view the api in a nicer format install a JSON extension like [this one](https://chromewebstore.google.com/detail/jsonvue/chklaanhfefbnpoihckbnefhakgolnmc)
 
 We Travellers website is developed as a Portfolio Project#5 (Advanced Front End / React) for the Code Institute's Full Stack Software Development Course.
 
-### Website Mockup Image goes here
+![we_travellers_mockup_image](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717043415/we_travellers_mockup_image_q5hgg4.png)
 
 ## Table of Contents
 
@@ -1102,6 +1103,7 @@ Automated Testing is carried out only for the navbar component. For the tests I 
     - ``git commit -m "message"`` - to commit the code to local repository ready to be pushed
     - ``git push`` - final command used to push committed code to remote repo on Github
 
+
 ### Deploying in Heroku
 
 - The project has been deployed on Heroku as follows:
@@ -1168,7 +1170,16 @@ For more details on how to clone the repository in order to create a copy for ow
 
 ## Credits
 
+- Code Institues learning material for advanced front end which I have used as a base of this project.
+- Code Institute's Advanced Front-end "Moments" walkthrough project served as inspiration and template. Code was customized and expanded for further functionality.
+- [React documentation](https://react.dev/) was used throughout the project to understand the codebase and implementation.
+- All images used on the website are sourced from [Pexels](https://www.pexels.com/), [Pixabay](https://pixabay.com/) and [Unsplash.](https://unsplash.com/)
+- Code Institute's Tutor - Sean, Thomas, Roman, Rebecca, for solving my doubts during this project development.
+
 ## Acknowledgements
+
+- I would like to express my gratitude to my mentor, Luke Buchanan and Martina Terlevic for their unwavering guidance, encouragement, and invaluable suggestions throughout the project. 
+- I am grateful to the Code Institute's Tutor support and slack community for solving all my doubts.
 
 
 
