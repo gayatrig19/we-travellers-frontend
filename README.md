@@ -26,7 +26,7 @@ We Travellers website is developed as a Portfolio Project#5 (Advanced Front End 
   - [The Structure Plane](#the-structure-plane)
     - [Features](#features)
     - [Reusable Components](#reusable-components)
-    - [Features Left to Implement](#features-left-to-implement)
+    - [Future Features](#future-features)
   - [The Skeleton Plane](#the-skeleton-plane)
     - [Wireframes](#wireframes)
     - [Database Design](#database-design)
@@ -682,11 +682,11 @@ This component has been reused to display profile images within any content(post
 
 ``EditDeleteDropdown.js``
 
-![editdelete_dropdown_component]()
+![editdelete_dropdown_component](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717047386/editdelete_dropdown_component_imkmol.png)
 
 This component has been reused in every single form that allowed users for Update and Delete functionality. The simple design allowed me to use it even within the small forms (comments for example). It didn't overcrowd the page despite being used in so many places. The component is accessed for editing or deleting posts and comments, and for updating user profiles.
 
-### Features Left to Implement
+### Future Features
 
 - Allow users to upload multiple images in a single post.
 - Enable discussion forums for users to ask questions, share tips, and discuss travel plans.
@@ -1173,6 +1173,7 @@ For more details on how to clone the repository in order to create a copy for ow
 - Code Institues learning material for advanced front end which I have used as a base of this project.
 - Code Institute's Advanced Front-end "Moments" walkthrough project served as inspiration and template. Code was customized and expanded for further functionality.
 - [React documentation](https://react.dev/) was used throughout the project to understand the codebase and implementation.
+- [React-Bootstrap documentation](https://react-bootstrap-v4.netlify.app/)
 - All images used on the website are sourced from [Pexels](https://www.pexels.com/), [Pixabay](https://pixabay.com/) and [Unsplash.](https://unsplash.com/)
 - Code Institute's Tutor - Sean, Thomas, Roman, Rebecca, for solving my doubts during this project development.
 
@@ -1180,15 +1181,6 @@ For more details on how to clone the repository in order to create a copy for ow
 
 - I would like to express my gratitude to my mentor, Luke Buchanan and Martina Terlevic for their unwavering guidance, encouragement, and invaluable suggestions throughout the project. 
 - I am grateful to the Code Institute's Tutor support and slack community for solving all my doubts.
-
-
-
-
-
-
-
-
-
 
 
 
