@@ -655,8 +655,44 @@ the website content.
 
 ### Reusable Components
 
+Reusable components have been created to recycle the code and reduce code duplication.
+
+``NavBar.js``
+
+Reused throughout the entire page to provide consistent design allowing users to become familiar with navigating the pages and making it an easy and enjoyable experience.
+
+``Asset.js``
+
+The asset component is utilized throughout the site to display a loading spinner from react-bootstrap while content is being processed. The component is used on the following pages:
+
+  - ProfilePage.js
+  - PopularProfiles.js
+  - PostCreateForm.js
+  - PostPage.js
+  - PostsPage.js
+
+
+``Avatar.js``
+
+This component has been reused to display profile images within any content(posts, comments, comments create form, popular profiles, profile and profile page) that has been added by the specific profile. This made it easy for other users to click on the profile avatar and check out who was the content from. The component has been helpful in making the user experience more personalized by displaying their own profile image.
+
+![avatar_reusable_component](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717037199/avatar_reusable_component_ezvri9.png)
+
+
+``EditDeleteDropdown.js``
+
+![editdelete_dropdown_component]()
+
+This component has been reused in every single form that allowed users for Update and Delete functionality. The simple design allowed me to use it even within the small forms (comments for example). It didn't overcrowd the page despite being used in so many places. The component is accessed for editing or deleting posts and comments, and for updating user profiles.
+
 ### Features Left to Implement
 
+- Allow users to upload multiple images in a single post.
+- Enable discussion forums for users to ask questions, share tips, and discuss travel plans.
+- Add map feature to allow users to pin-point famous travel spots.
+- Use maps and geo-location APIs to connect users with local guides during their travel.
+- Implement Event Notifications - Notify users of local events, festivals, and activities 
+  happening at their destination.
 
 
 ## The Skeleton Plane
@@ -852,7 +888,7 @@ I was not able to use the app on Iphone and also on Safari browser(on all device
   - language of the document for screen readers.
   - alerts coming up 'Reduntant link-Adjacent links go to the same URL', however as it doesn't come 
     up as an error, I have left it in. The warnings are mainly for signup, signin. Also for the comments link on post list view which takes user to comments section in post detail view and two links to home page from 'home' link and logo.
-  - The errors for form labels are not resolved and left for later due to time constraint.
+  - The errors for form labels are not resolved and left for later due to time constraint, will be addressed in future enhancements.
 
 - Accessibility test result for [website](https://res.cloudinary.com/dpzitpjjc/image/upload/v1716938607/wave_accessibility_testing_vo9lfh.png)
 
@@ -997,7 +1033,19 @@ Automated Testing is carried out only for the navbar component. For the tests I 
 
 ## Bugs
 
+- Safari issue as explained [here](#accessibility)
+
+- While performing WAVE accessibilty testing, no contrasts errors were detected. But the errors for missing form label, and alt attribute for avatar and post image is raised for profile page. This is because a default alt attribute is hardcoded rather that using the avatar or post image title itself. This has impacted the lighthouse accessibility tests for profile page. I have not addressed the issue due to time constraint. As everything is working as expected, it will addressed in future enhancements.
+
+
 ### Console errors
+
+- When unauthorised, there is some console errors which have also been present in walkthrough. While following along the walkthrough videos, it is noted that these errors are to be viewed as a feedback from API. Errors such as 401 while sign in /sign up are feedback errors from API. I have not addressed them taking into account the response and left it unchanged. The functionality and working of the website is not affected by these errors.
+
+![console_errors_image](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717038919/console_errors_image_bagivm.png)
+
+
+**Note -** The commented out console.logs in catch blocks are kept in the code as it was advised in the moments walkthrough. Other than that there is no commented code present in the project.
 
 
 ## Deployment
