@@ -895,6 +895,49 @@ I was not able to use the app on Iphone and also on Safari browser(on all device
 
 ### Lighthouse
 
+#### Home Page (desktop and mobile):
+
+![home_page_lighthouse_desktop](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717040776/home_page_desktop_lighthouse_sev7oh.png)
+
+
+![home_page_lighthouse_mobile](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717040778/homepage_mobile_lighthouse_hoqzoj.png)
+
+
+#### Posts Detail View (desktop and mobile):
+
+![postdetail_page_lighthouse_desktop](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717040843/post_detail_desktop_lighthouse_rxyvbh.png)
+
+
+![postdetail_page_lighthouse_mobile](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717040844/post_detail_mobile_lighthouse_afsvxm.png)
+
+
+#### Sign In Page (desktop and mobile):
+
+![sign_in_page_lighthouse_desktop](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717040928/sign_in_desktop_lighthouse_z0c473.png)
+
+
+![sign_in_page_lighthouse_mobile](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717040937/signin_mobile_lighthouse_wtdg7j.png)
+
+
+#### Sign Up Page (desktop and mobile):
+
+![sign_up_page_lighthouse_desktop](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717040931/sign_up_desktop_lighthouse_ouszwf.png)
+
+
+![sign_up_page_lighthouse_mobile](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717040934/sign_up_mobile_lighthouse_mzajp6.png)
+
+
+#### Profile Page (desktop and mobile):
+
+![profile_page_lighthouse_desktop](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717041498/profilepage_lighthouse_desktop_nwhoav.png)
+
+
+![profile_page_lighthouse_mobile](https://res.cloudinary.com/dpzitpjjc/image/upload/v1717041500/profilepage_lighthouse_mobile_ts9wxl.png)
+
+
+The performance is lower due to the fact that the page is heavy on images, fixes can be applied in the future as time won't allow me for it now. The accessibilty score is low for the profile page due to issue explained [here](#bugs)
+
+
 ### Validator Testing
 
 #### HTML Validation
