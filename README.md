@@ -930,16 +930,32 @@ No errors were found when passing through the official Jigsaw W3 Validator
 | User Profiles own posts - any auth state |	Click on profile owners avatar from any tab or page |	User can see list of posts that belong to that profile, posts are listed with most recently added/updated at the top |	as expected |
 | Most Followed Profiles list side bar - any auth state |	User selects any of the profiles from the most followed profiles side bar |	User directed to that profile page, user can see correct profile details | as expected |
 |Page Not Found - any auth state |	Enter incorrect URL |	User receives an error page with 'page not found' message | as expected |
-|NO RESULTS- any auth state |	search for keyword that doesn't exist across the posts |	User receives no results message page	| as expected |
-
-
-
-
+|NO RESULTS - any auth state |	search for keyword that doesn't exist across the posts |	User receives no results message page	| as expected |
 
 
 ##### Links and Buttons
 
+|  Testing   |   Action   |    Expected    |  Actual  |
+|-------------|-------------|----------------|----------|
+|'Home' link from navbar - any auth state | click on home link from any page |	user directed to home page | as expected |
+|'Feed' link from navbar - logged in |	click on feed link from any page |	user directed to 'feed' page with posts list of followed profiles |	as expected |
+|'Liked' link from navbar - logged in |	click on liked link from any page |	user directed to 'liked' page with liked posts list |	as expected |
+|'Bookmarks' link from navbar - logged in |	click on bookmarks link from any page |	user directed to 'bookmarks' page with bookmarked / saved posts list |	as expected |
+|'Add Post' link from navbar - logged in | click on add post link from any page |	user directed to add post form | as expected |
+|'profile avatar with username' link from navbar - logged in |	click on profile avatar with username link from any page | user directed to own profile page |	as expected |
+| 'Sign in' link from nav bar - unauthorised |	click on sign in link from any page |	user directed to sign in page |	as expected |
+|'Sign up' link from navbar - unauthorised | click on sign up link from any page | user directed to sign up page |	as expected |
+|'Sign out' link from navbar - logged in |	click on sign out link from any page |	user signed out |	as expected |
+| Logo from navbar - any auth state | click on logo from any page |	user directed to home page |	as expected |
+| Profile avatar or username from post container - any auth state |	click on profile avatar from any page |	user directed to related profile |	as expected |
+| Profile avatar from Most followed Profiles sidebar - any auth state |	click on profile avatar from sidebar |	user directed to related profile |	as expected |
+|'Comments icon' from post container - any auth state |	click on comments icon |	user directed to correct post detail  page |	as expected |
+|'Comments icon' from post container - logged in |	click on comments icon |	user now have access to comment form |	as expected |
+
+
 ##### Negative Testing
+
+
 
 
 ### Automated Testing
