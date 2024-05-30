@@ -792,7 +792,7 @@ The design for add post and edit post remains same. The difference is shown wher
 #### Typography
 
 - [DM Sans](https://fonts.google.com/specimen/DM+Sans) a google font, is used throughout the website.
-- With website consideration it was best suited as it gives a modern and versatile look to the content throughout on pages. 
+- With website consideration it was best suited as it gives a modern and versatile look to the content throughout on all pages. 
 - The accessibilty and user experience, both are achieved with this as the font is easy to read, clear on all screen sizes and for all font sizes making it good choice to use for a social media platform.
 
 #### Images
@@ -832,7 +832,6 @@ The design for add post and edit post remains same. The difference is shown wher
 - [SmartDraw](https://www.smartdraw.com/) used to generate the ER Diagram
 - [Am I Responsive](http://amiresponsive.blogspot.com/) to create the Mockup image in this README.
 - Code Institute's Gitpod Template to generate the workspace for the project.
-
 
 
 ## Testing
@@ -993,7 +992,7 @@ Along with Eslint, Prettier is also used to check the codebase and keep the file
 | Edit Post - logged in users | Select three dots drop down menu from post detail view, select edit icon | User taken back to post form with all details already pre-populated, correct details shown, user changes any field and submits a form. user gets redirected back to advert detail view, all correct updated details show | as expected |
 | Delete Post - logged in users | Select three dots drop down menu from post detail view, select delete icon | Post is deleted and user gets redirected back to last page they were on | as expected|
 |Bookmark post option - other users posts- signed out | Hover over then Click on bookmark to save any posts | User can see an overlay message to log in to bookmark posts, when clicked - no action performed | as expected |
-|Bookmark post option - own post- logged in |	Hover over then click the icon |	User can see a message that they can see own posts within own profile, when clicked nothing happens	| as expected |
+|Bookmark post option - own post- logged in |	Hover over then click the icon |	User can see a message that they can't bookmark their posts as they can see own posts within profile, when clicked nothing happens	| as expected |
 |Bookmark post option - other users post- signed in |	Sign in and click on bookmarks icon to bookmark someone else's post | Icon now shows as solid with count increased by 1 , post shows within list view when clicked on 'Bookmarks' link from nav bar |	as expected |
 |Bookmarks link from NavBar - logged in | Sign in, click on 'Bookmarks'  from navbar |	User can see posts they have bookmarked, no unbookmarked posts shows within the list |	as expected |
 |Most Followed Profiles - any auth state |	Check the profile list with avatar and username displayed |	User checks each user profile from sidebar, profiles most followed show at the top |	as expected |
@@ -1043,7 +1042,7 @@ Along with Eslint, Prettier is also used to check the codebase and keep the file
 | Logo from navbar - any auth state | click on logo from any page |	user directed to home page |	as expected |
 | Profile avatar or username from post container - any auth state |	click on profile avatar from any page |	user directed to related profile |	as expected |
 | Profile avatar from Most followed Profiles sidebar - any auth state |	click on profile avatar from sidebar |	user directed to related profile |	as expected |
-|'Comments icon' from post container - any auth state |	click on comments icon |	user directed to correct post detail  page |	as expected |
+|'Comments icon' from post container - any auth state |	click on comments icon |	user directed to correct post detail  page with list of comments displayed |	as expected |
 |'Comments icon' from post container - logged in |	click on comments icon |	user now have access to comment form |	as expected |
 
 
